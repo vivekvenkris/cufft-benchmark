@@ -48,8 +48,8 @@ int main(int argc, char **argv) {
     }
     fprintf(stderr,"Driver version: %s\n", version_str);
 
-    num_iterations = 10;
-    int ntrials=7;
+    num_iterations = 100;
+    int ntrials=6;
     long long nffts[ntrials] = {1L<<23, 1L<<28, (1L<< 27) * 3, (1L << 26) * 7, 1L<<29, 1L<<30};
     std::string* description = new std::string[ntrials]{"2^23", "2^28", "2^27 * 3", "2^26 * 7", "2^29", "2^30"};
 
