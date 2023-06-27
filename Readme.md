@@ -6,9 +6,9 @@ This is a CUDA program that benchmarks the performance of the CUFFT library for 
 
 - Nvidia GPU with CUDA drivers that support CUDA 12.0
 
-- Docker 
+- Docker or GNU Make
 
-## Usage
+## Usage with Docker
 
 1. Clone the repository
     ```bash
@@ -19,17 +19,37 @@ This is a CUDA program that benchmarks the performance of the CUFFT library for 
     cd cufft-benchmark
     ```
 
-2. Build the Docker image:
+3. Build the Docker image:
     ```bash
     docker build -t cufft-benchmark .
     ```
-3. Run the Docker container:
+4. Run the Docker container:
     ```bash
     docker run --gpus device=<device_id> -it cufft-benchmark
     ```
 
     This will start the container and will automatically run the benchmark. <device_id> is the id of the GPU. If you have only one GPU on the device, you can also say `--gpus all` instead. 
 
-4. The benchmark output will be printed on the screen. Copy it over and add it to your tender document. 
+5. The benchmark output will be printed on the screen. Copy it over and add it to your tender document. 
 
 
+## Usage without Docker
+
+1. Clone the repository
+    ```bash
+    git clone https://github.com/example/cufft-benchmark.git
+    ```
+2. `cd` inside the repository
+    ```bash
+    cd cufft-benchmark
+    ```
+
+3. Execute the makefile:
+    ```bash
+    make
+    ```
+4. Run the Docker container:
+    ```bash
+    ./cufft_benchmark
+    ```
+5. The benchmark output will be printed on the screen. Copy it over and add it to your tender document. 
