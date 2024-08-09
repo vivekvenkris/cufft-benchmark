@@ -10,6 +10,9 @@ This is a CUDA program that benchmarks the performance of the CUFFT library for 
 
 ## Usage with Docker
 
+- You can get a prebuilt image here https://hub.docker.com/repository/docker/vivekvenkris/cufft-benchmark
+- If you want to build your own image, continue with the instructions below.
+
 1. Clone the repository
     ```bash
     git clone https://github.com/vivekvenkris/cufft-benchmark.git
