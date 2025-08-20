@@ -40,7 +40,7 @@ This is a CUDA program that benchmarks the performance of the CUFFT library for 
 
 1. Clone the repository
     ```bash
-    git clone https://github.com/example/cufft-benchmark.git
+    git clone https://github.com/cufft-benchmark.git
     ```
 2. `cd` inside the repository
     ```bash
